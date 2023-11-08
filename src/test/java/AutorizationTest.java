@@ -42,9 +42,8 @@ public class AutorizationTest {
     }
 
     @AfterEach
-    public void downDriver() throws InterruptedException {
+    public void downDriver() {
         if (driver != null){
-            Thread.sleep(3000);
             driver.quit();
         }
     }
