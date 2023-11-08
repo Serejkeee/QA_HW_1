@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class OpenImage {
+public class OpenImageTest {
     private WebDriver driver;
 
     @BeforeAll

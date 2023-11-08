@@ -10,9 +10,9 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Autorization {
+public class AutorizationTest {
     private WebDriver driver;
-    private Logger logger = LogManager.getLogger(Autorization.class);
+    private Logger logger = LogManager.getLogger(AutorizationTest.class);
 
 
     @BeforeAll
@@ -42,8 +42,9 @@ public class Autorization {
     }
 
     @AfterEach
-    public void downDriver(){
+    public void downDriver() throws InterruptedException {
         if (driver != null){
+            Thread.sleep(3000);
             driver.quit();
         }
     }
